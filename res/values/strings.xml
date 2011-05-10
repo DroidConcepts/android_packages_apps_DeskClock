@@ -264,6 +264,7 @@
       <item>60 minutes</item>
       <item>90 minutes</item>
       <item>120 minutes</item>
+      <item>Infinite</item>
     </string-array>
 
     <!-- Values that are retrieved from the ListPreference. These must match the alarm_limit_entries above. -->
@@ -274,6 +275,7 @@
       <item>60</item>
       <item>90</item>
       <item>120</item>
+      <item>-1</item>
     </string-array>
 
     <!-- Setting title for setting alarm time limit -->
