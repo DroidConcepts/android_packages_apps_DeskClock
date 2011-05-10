@@ -54,12 +54,22 @@
         android:entryValues="@array/alarm_limit_values"
         android:defaultValue="30" />
 
-	<ListPreference
+    <ListPreference
 	android:key="screensaver_timeout"
 	android:title="@string/screensaver_timeout_title"
         android:entries="@array/screensaver_timeout_entries"
         android:entryValues="@array/screensaver_timeout_values"
         android:defaultValue="5" 
         android:dialogTitle="@string/screensaver_timeout_title"/>
+
+<PreferenceScreen
+    android:key="color_picker"
+    android:title="@string/color_picker_title"
+    android:summary="@string/color_picker_summary">
+	<intent
+	    android:action="com.android.alarmclock.ColorPicker"
+	    android:targetPackage="com.android.alarmclock"
+		    android.targetClass="com.android.alarmclock.ColorPicker"/>
+</PreferenceScreen>
 
 </PreferenceScreen>
